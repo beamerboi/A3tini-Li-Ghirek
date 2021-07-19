@@ -1,0 +1,48 @@
+{%load static%}
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aatini Li Ghirek</title>
+        <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+    </head>
+    <body class="wide">
+        <div id="page" class="hfeed site">
+            <header>
+                <div class="header">
+                    <div class="main-head-wrap inner-wrap clearfix">
+                        <div id="header-logo-image">
+                            <a href="/">
+                                <img src="{%static 'images/logo.png'%}" alt="Aatini Li Ghirek">
+                            </a>
+                        </div>
+                        <div id="header-text" class="">
+                            <h1 id="site-title">
+                                <a href="/" title="Wisdom Pet Medicine" rel="home">Aatini Li Ghirek</a>
+                            </h1>
+                            <p>If you don't need it, Somebody else does.</p>
+                        </div>
+                    </div>
+                    <img src="{%static 'images/header.jpg'%}" alt="Aatini Li Ghirek">
+                </div>
+            </header>
+            <div class="main-wrapper">
+                <div class="single-page clearfix">
+                    <div class="inner-wrap">
+                        <p>A3tini Li Ghirek is a 100% FREE platform for pet trading, which you can put a free offer on any pet that you may think that you don't need it, people can review your offer and pick it up.</p>
+                        <hr>
+                        <div>
+                        {% block content%}
+                        {% endblock %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="colophon">
+                <div class="inner-wrap">
+                    A3tini Li Ghirek is made by Ghassen Jemaî with ❤️
+                </div>
+            </footer>
+        </div>
+        <script src="{%static 'main.js'%}"></script>
+    </body>
+</html>
